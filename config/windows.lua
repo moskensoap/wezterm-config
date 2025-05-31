@@ -10,6 +10,7 @@ local config = wezterm.config_builder()
 config.initial_cols = 150
 config.initial_rows = 36
 
+config.window_decorations = 'RESIZE'
 
 -- Finally, return the configuration to wezterm:
 return config
