@@ -6,8 +6,11 @@ local options = {
 }
 
 if platform.is_win then
-   options.default_prog = { 'powershell' }
+   options.default_prog = { 'fish' }
    options.launch_menu = {
+      { label = 'Bash', args = { 'bash' } },
+      { label = 'Fish', args = { 'fish' } },
+      { label = 'Zsh', args = { 'zsh' } },
       { label = 'PowerShell', args = { 'powershell' } },
       { label = 'Command Prompt', args = { 'cmd' } },
    }
