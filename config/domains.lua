@@ -12,7 +12,7 @@ return {
          -- identifies the host:port pair of the remote server
          -- Can be a DNS name or an IP address with an optional
          -- ":port" on the end.
-         remote_address = "archcraft.archcraft:22",
+         remote_address = "archcraft.lan:22",
 
          -- Whether agent auth should be disabled.
          -- Set to true to disable it.
@@ -31,7 +31,26 @@ return {
          -- identifies the host:port pair of the remote server
          -- Can be a DNS name or an IP address with an optional
          -- ":port" on the end.
-         remote_address = "ubuntu.ubuntu:22",
+         remote_address = "ubuntu.lan:22",
+
+         -- Whether agent auth should be disabled.
+         -- Set to true to disable it.
+         -- no_agent_auth = false,
+
+         -- The username to use for authenticating with the remote host
+         username = "root",
+      },
+      {
+         -- The connection is an ssh connection, don't use any multiplexing.
+         multiplexing = "None",
+
+         -- The name of this specific domain. Must be unique amongst
+         name = "kalilinux",
+
+         -- identifies the host:port pair of the remote server
+         -- Can be a DNS name or an IP address with an optional
+         -- ":port" on the end.
+         remote_address = "kalilinux.lan:22",
 
          -- Whether agent auth should be disabled.
          -- Set to true to disable it.
