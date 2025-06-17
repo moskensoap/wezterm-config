@@ -12,7 +12,7 @@ return {
          -- identifies the host:port pair of the remote server
          -- Can be a DNS name or an IP address with an optional
          -- ":port" on the end.
-         remote_address = "archcraft.lan:22",
+         remote_address = "192.168.2.21:22",
 
          -- Whether agent auth should be disabled.
          -- Set to true to disable it.
@@ -31,7 +31,7 @@ return {
          -- identifies the host:port pair of the remote server
          -- Can be a DNS name or an IP address with an optional
          -- ":port" on the end.
-         remote_address = "ubuntu.lan:22",
+         remote_address = "192.168.2.20:22",
 
          -- Whether agent auth should be disabled.
          -- Set to true to disable it.
@@ -50,7 +50,83 @@ return {
          -- identifies the host:port pair of the remote server
          -- Can be a DNS name or an IP address with an optional
          -- ":port" on the end.
-         remote_address = "frp.archcraft.lan:22",
+         remote_address = "192.168.2.20:50022",
+
+         -- Whether agent auth should be disabled.
+         -- Set to true to disable it.
+         -- no_agent_auth = false,
+
+         -- The username to use for authenticating with the remote host
+         username = "root",
+      },
+      {
+         -- The connection is an ssh connection, don't use any multiplexing.
+         multiplexing = "None",
+
+         -- The name of this specific domain. Must be unique amongst
+         name = "debian",
+
+         -- identifies the host:port pair of the remote server
+         -- Can be a DNS name or an IP address with an optional
+         -- ":port" on the end.
+         remote_address = "192.168.2.40:22",
+
+         -- Whether agent auth should be disabled.
+         -- Set to true to disable it.
+         -- no_agent_auth = false,
+
+         -- The username to use for authenticating with the remote host
+         username = "root",
+      },
+      {
+         -- The connection is an ssh connection, don't use any multiplexing.
+         multiplexing = "None",
+
+         -- The name of this specific domain. Must be unique amongst
+         name = "alpine",
+
+         -- identifies the host:port pair of the remote server
+         -- Can be a DNS name or an IP address with an optional
+         -- ":port" on the end.
+         remote_address = "192.168.2.41:22",
+
+         -- Whether agent auth should be disabled.
+         -- Set to true to disable it.
+         -- no_agent_auth = false,
+
+         -- The username to use for authenticating with the remote host
+         username = "root",
+      },
+      {
+         -- The connection is an ssh connection, don't use any multiplexing.
+         multiplexing = "None",
+
+         -- The name of this specific domain. Must be unique amongst
+         name = "archlinux",
+
+         -- identifies the host:port pair of the remote server
+         -- Can be a DNS name or an IP address with an optional
+         -- ":port" on the end.
+         remote_address = "192.168.2.42:22",
+
+         -- Whether agent auth should be disabled.
+         -- Set to true to disable it.
+         -- no_agent_auth = false,
+
+         -- The username to use for authenticating with the remote host
+         username = "root",
+      },
+      {
+         -- The connection is an ssh connection, don't use any multiplexing.
+         multiplexing = "None",
+
+         -- The name of this specific domain. Must be unique amongst
+         name = "almalinux",
+
+         -- identifies the host:port pair of the remote server
+         -- Can be a DNS name or an IP address with an optional
+         -- ":port" on the end.
+         remote_address = "192.168.2.43:22",
 
          -- Whether agent auth should be disabled.
          -- Set to true to disable it.
@@ -69,7 +145,7 @@ return {
          -- identifies the host:port pair of the remote server
          -- Can be a DNS name or an IP address with an optional
          -- ":port" on the end.
-         remote_address = "kalilinux.lan:22",
+         remote_address = "192.168.2.44:22",
 
          -- Whether agent auth should be disabled.
          -- Set to true to disable it.
